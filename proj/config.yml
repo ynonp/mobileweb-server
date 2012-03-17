@@ -33,10 +33,11 @@ engines:
 
 plugins:
     Mongo:
-        host: mbdb-ynonp-data-0.dotcloud.com
-        port: 22756
-        username: root
-        password: hwQGTPLW9Qcj6aU0Z1Ih
+        host: ds031117.mongolab.com
+        port: 31117
+        db_name: rdb
+        username: proj
+        password: proj
         auto_reconnect: 1
         auto_connect: 1
 

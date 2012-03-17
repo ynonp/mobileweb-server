@@ -1,0 +1,20 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Gallery For [% user %]</a>
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <ul class="thumbnails">
+    [% FOREACH img IN images %]
+        <li class="span3">
+            <div class="thumbnail">
+                <img src="[% img.img %]" />
+                <span class="desc">[% img.description %]</span>
+            </div>
+        </li>
+    [% END %]
+    </ul>
+</div>
