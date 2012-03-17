@@ -1,2 +1,3 @@
-data:
-    type: mongodb
+www:
+    type: perl
+    approot: proj
