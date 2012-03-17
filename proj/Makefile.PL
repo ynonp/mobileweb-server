@@ -12,6 +12,7 @@ WriteMakefile(
       : ()),
     PL_FILES            => {},
     PREREQ_PM => {
+        'Plack::Request'        => 0,
         'Test::More'            => 0,
         'YAML'                  => 0,
         'Dancer'                => 1.3091,
