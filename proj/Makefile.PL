@@ -18,6 +18,7 @@ WriteMakefile(
         'Dancer::Plugin::Mongo' => 0,
         'URI'                   => 0,
         'URI::data'             => 0,
+        'Template'              => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'proj-*' },
