@@ -5,6 +5,10 @@ use URI;
 
 our $VERSION = '0.1';
 
+before sub {
+    header 'Access-Control-Allow-Origin' => '*';
+};
+
 get '/' => sub {
     template 'index';
 };
