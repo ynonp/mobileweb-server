@@ -34,7 +34,7 @@ post '/images/upload' => sub {
     insert_image($user, $desc, $img);
 };
 
-get '/images/:user.json' => sub {
+get '/images/gallery/:user.json' => sub {
     my $user = param 'user';
     debug 'user = ' . $user;
 
@@ -43,7 +43,7 @@ get '/images/:user.json' => sub {
     to_json { images => [@images] };
 };
 
-get '/images/:user' => sub {
+get '/images/gallery/:user' => sub {
     my $user = param 'user';
     my @images = get_images_for_user($user);
 
